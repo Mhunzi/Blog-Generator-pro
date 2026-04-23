@@ -30,11 +30,13 @@
 ## 🚀 安装步骤
 
 ### 1. 克隆项目
+bash
 git clone https://github.com/yourusername/blog-generator-ai.git
 cd blog-generator-ai
 
 ### 2. 创建虚拟环境
 **Windows：**
+bash
 python -m venv venv
 venv\Scripts\activate
 
@@ -43,18 +45,21 @@ python3 -m venv venv
 source venv/bin/activate
 
 ### 3. 安装依赖
+bash
 pip install -r requirements.txt
 
-### 4. 配置API密钥
-.env文件内容：
+### 4. 配置API密钥(.env)
+bash
 # ZenMux API 配置
 ZENMUX_API_KEY=your_zenmux_api_key_here
 ZENMUX_OPENAI=https://zenmux.ai/api/v1  # 可选，使用默认值也可
 
 # DeepSeek API 配置
+bash
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 
 ### 5. 运行应用
+bash
 streamlit run Blog_Generator_pro.py
 
 ---
