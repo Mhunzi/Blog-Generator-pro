@@ -1,8 +1,15 @@
 # 🌟 BlogGenerator AI
 
-一个基于 Streamlit 构建的智能博客生成工具，利用大语言模型（LLM）自动生成高质量的技术博客内容。支持 ZenMux 和 DeepSeek 等多种 API 提供商，提供多智能体工作流和批量处理功能。
+一个基于 Streamlit 构建的智能博客生成工具，利用大语言模型（LLM）自动生成高质量的技术博客内容。支持 ZenMux 和 DeepSeek 等多种 API 提供商，提供多智能体工作流和批量处理功能。其支持导出JSON和md格式的博客文件。
 
 ---
+
+## ✨ 展示效果
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/f0b4b0ef-9165-45e7-be65-a5970f66cc54" />
+<img width="1911" height="917" alt="image" src="https://github.com/user-attachments/assets/a51e871b-4a89-43a6-98e5-c0ca46500418" />
+<img width="1908" height="897" alt="image" src="https://github.com/user-attachments/assets/92501a56-ba24-41de-ba16-97c47ef59636" />
+
+
 
 ## ✨ 功能特性
 
@@ -30,41 +37,43 @@
 ## 🚀 安装步骤
 
 ### 1. 克隆项目
-bash
+```bash
 git clone https://github.com/yourusername/blog-generator-ai.git
 cd blog-generator-ai
+```
 
 ### 2. 创建虚拟环境
+```bash
 **Windows：**
-bash
 python -m venv venv
 venv\Scripts\activate
-
+```
+```bash
 **macOS/Linux：**
 python3 -m venv venv
 source venv/bin/activate
-
+```
 ### 3. 安装依赖
-bash
+```bash
 pip install -r requirements.txt
-
+```
 ### 4. 配置API密钥(.env)
-bash
+```bash
 # ZenMux API 配置
 ZENMUX_API_KEY=your_zenmux_api_key_here
 ZENMUX_OPENAI=https://zenmux.ai/api/v1  # 可选，使用默认值也可
 
 # DeepSeek API 配置
-bash
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
-
+```
 ### 5. 运行应用
-bash
+```bash
 streamlit run Blog_Generator_pro.py
-
+```
 ---
 
 ## 🏗️ 技术架构
+```bash
 BlogGenerator AI
 ├── 用户界面层 (Streamlit)
 │   ├── 配置面板
@@ -84,8 +93,10 @@ BlogGenerator AI
     └── 缓存管理
 
 ---
+```
 
 ## 🔄 智能工作流
+```bash
 ### 1. 📊 研究员阶段
 - 调研主题背景
 - 收集技术资料
@@ -102,8 +113,9 @@ BlogGenerator AI
 - 优化表达风格
 
 ---
-
+```
 ## 📁 项目结构
+```bash
 blog-generator-ai/
 ├── Blog_Generator_pro.py     # 主程序文件
 ├── requirements.txt          # Python 依赖
@@ -119,7 +131,7 @@ blog-generator-ai/
 └── LICENSE                  # 许可协议
 
 ---
-
+```
 ## 📄 许可协议
 本项目采用 **MIT 协议** - 查看 [LICENSE](LICENSE) 文件了解详情。
 
