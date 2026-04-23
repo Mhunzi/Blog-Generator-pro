@@ -46,9 +46,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ### 4. 配置API密钥
-复制 `.env.example` 为 `.env` 并编辑：
-
-文件内容：
+.env文件内容：
 # ZenMux API 配置
 ZENMUX_API_KEY=your_zenmux_api_key_here
 ZENMUX_OPENAI=https://zenmux.ai/api/v1  # 可选，使用默认值也可
